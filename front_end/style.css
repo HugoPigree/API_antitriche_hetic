@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+}
+
+html{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(107, 18, 158);
+
+}
+
+header {
+    max-height: 60px;
+    background-color: rgb(216, 223, 5);
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Open Sans", sans-serif;
+    font-size: 120%;
+}
+
+nav{
+    width: 60%;
+    padding: 0.1%;;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(107, 18, 158);
+    padding: 1%;
+    background-color: rgb(216, 223, 5);
+    transition: all 200ms;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+header img {
+    height: 150%;
+    object-fit: cover;
+
+}
+
+header nav a:hover{
+    background-color: rgb(191, 191, 4);
+}
+
+.logo{
+    width: 3%;
+}
+
+article{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+}
+
+div {
+    justify-content: center;
+}
+
+.questions{
+    width: 50%;
+    padding-right: 1%;
+}
+
+.timer{
+    width: 10%;
+    color: rgb(191, 191, 4);
+}
+
+textarea {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 10vh;
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 10px 10px;
+    text-indent: 1rem;
+}
+
+#output{
+    background-color: rgb(3, 3, 104);
+    color: #fff;
+
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    color: #00000075;
+}
+
+/*
+** Responsive Design
+*/
+
+
+
+
+#alerte{
+    display: none;
+}
+.alerte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    textarea {
+        height: 50vh;
+    }
+}
