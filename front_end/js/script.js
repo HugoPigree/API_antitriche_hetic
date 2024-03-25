@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
               headers: {
                   'Content-Type': 'application/json'
               },
-              body: JSON.stringify({ nom: formData.get('nom') })
+              body: JSON.stringify({ nom: formData.get('nom'), reponse1: formData.get('reponse1') })
           });
           const data = await response.json();
       } catch (error) {
@@ -76,10 +76,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
-
-
-
-
-
-
-

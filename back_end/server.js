@@ -18,7 +18,7 @@ app.get('/api/v1/eleve', async(req, res) => {
   const id= req.query.id
   const {data, error} = await getEleve(id)
   res.json(data)
-  
+
 })
 
 app.post('/api/v1/eleve', async(req, res) => {
@@ -30,5 +30,3 @@ app.post('/api/v1/eleve', async(req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
-
