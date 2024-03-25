@@ -36,4 +36,6 @@ async function addEleve(info) {
 
 
 
+
+
 export{getEleves, getEleve, addEleve}
