@@ -30,16 +30,18 @@
     </section>
     <section class="identification">
             
-        <form>    
-            <input type="text" id="nameInput" placeholder="Entrez votre nom" required>
+        <form action="http://localhost:3000/api/v1/eleve" method="post">    
+            <input type="text" name="nom"  placeholder="Entrez votre nom"  required>
             <input type="submit" value="Validez vos infos">
-        </form>
-        
-        
+        </form>     
     </section>
 
     <div class="buttonp1">
-        <a href="./page2.html"><button class="boutonp1">Question suivante</button></a>
+        <a href="./page2.html"><button class="boutonp1">Première question</button></a>
     </div>
+    
 </body>
+<script type="module" src="./script.js"></script>
+
+
 </html>
