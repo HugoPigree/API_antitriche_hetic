@@ -2,12 +2,13 @@ import express from 'express'
 import cors from 'cors'
 import {getEleves, getEleve, addEleve} from './model/supabase.js'
 
-const app = express()
-const port = 3000
-app.use(cors())
-app.use(express.json())
+const app = express();
+const port = 3000;
+app.use(cors());
+app.use(express.json());
 
-app.get('/api/v1', async(req, res) => {
+
+app.get('/', async(req, res) => {
   const {data, error} = await getEleves()
   res.json(data)
 })
