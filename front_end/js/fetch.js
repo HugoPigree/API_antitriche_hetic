@@ -13,11 +13,9 @@
                     body: JSON.stringify({ nameInput: formData.get('nameInput') })
                 });
                 const data = await response.json();
-                console.log(data); // Afficher la réponse du serveur
-                // Rediriger l'utilisateur vers une autre page ou effectuer une autre action après l'ajout réussi
+                console.log(data);
             } catch (error) {
                 console.error(error);
-                // Gérer les erreurs de manière appropriée
             }
         });
     });
