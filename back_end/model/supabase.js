@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
-const supabaseUrl = 'https://bgraqhclnjjvrwjojsyb.supabase.co'
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJncmFxaGNsbmpqdnJ3am9qc3liIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDk0OTY5MDUsImV4cCI6MjAyNTA3MjkwNX0.Fwrw5MCpJKt0Z3zolcrlHc4FSYKNG9sNi72Cy8AE4Y0"
+const supabaseUrl = 'https://ephsawxsecyzywcwqngj.supabase.co'
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwaHNhd3hzZWN5enl3Y3dxbmdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTEyOTkwODgsImV4cCI6MjAyNjg3NTA4OH0.V8n-vxkiZZyWKaSD985XPy6CPMe9tmUUy74TwTq7olc"
 const supabase = createClient(supabaseUrl, supabaseKey)
+
 
 async function getEleves(){
 const { data, error } = await supabase
